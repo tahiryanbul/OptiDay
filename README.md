@@ -22,9 +22,6 @@ cd OptiDay
 
 2. Sanal Ortamı Kurun ve Aktifleştirin:
 
-**2. Sanal Ortamı Kurun ve Aktifleştirin:**
-
-```bash
 # Windows için:
 python -m venv venv
 .\venv\Scripts\activate
