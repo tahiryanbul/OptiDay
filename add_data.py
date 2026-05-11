@@ -63,14 +63,13 @@ def gunluk_log_ekle(log_date, user_id, physical_activity_score, planned_total_du
 # ==========================================
 # TEST VE KULLANIM ALANI
 # ==========================================
-# print("OptiDay Veritabanı Yönetim Sistemi\n" + "="*40)
+print("OptiDay Veritabanı Yönetim Sistemi\n" + "="*40)
 
 # 1. Kullanıcıyı ekle ve veritabanının atadığı ID'yi yakala
 zeynep_id = yeni_kullanici_ekle(name="Zeynep", daily_standard_capacity=7)
 
 # Eğer kullanıcı başarıyla eklendiyse (ID boş değilse) görev ve log atamasını yap
 if zeynep_id:
-    # 2. Görevi doğrudan yakaladığımız o ID'ye ata
     yeni_gorev_ekle(
         user_id=zeynep_id, # Elle 4 yazmak yerine değişkeni kullandık!
         task_name="Makine Öğrenmesi Modeli Optimizasyonu", 
@@ -79,7 +78,6 @@ if zeynep_id:
         urgency_level=3
     )
 
-    # 3. Günlük log'u da aynı dinamik ID'ye bağla
     gunluk_log_ekle(
         log_date='2026-05-10', 
         user_id=zeynep_id, # Yine değişkeni kullandık

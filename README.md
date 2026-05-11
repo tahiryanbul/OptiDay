@@ -49,11 +49,11 @@ Projeye SQL arayüzü kullanmadan, doğrudan Python üzerinden dinamik olarak ye
 
 Sisteme yeni bir kullanıcı profili ve görevler eklemek için test dosyasını çalıştırın:
 
-Bash
-python veri_ekle.py
+python add_data.py
+
 Modül 2: Yapay Zeka Kapasite Analizi ve Görselleştirme
 Sistemdeki kullanıcıların o günkü yorgunluk skorlarını ve görev yüklerini analiz etmek için ana motoru çalıştırın.
 
-Bash
 python analyzer.py
+
 Bu komut, her kullanıcı için terminalde detaylı bir durum raporu oluşturur ve Seaborn kütüphanesi ile kapasite aşımlarını/optimizasyonları gösteren interaktif grafikler (Dashboard) çizer.
